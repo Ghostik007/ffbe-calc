@@ -1,0 +1,30 @@
+package Enumerations;
+
+public enum ItemEnumeration {
+    DAGGERS,
+    SWORDS,
+    GREAT_SWORDS,
+    KATANAS,
+    STAVES,
+    RODS,
+    BOWS,
+    AXES,
+    HAMMERS,
+    SPEARS,
+    HARPS,
+    WHIPS,
+    THROWING_WEAPONS,
+    GUNS,
+    MACES,
+    FISTS,
+    LIGHT_SHIELDS,
+    HEAVY_SHIELDS,
+    HATS,
+    HELMS,
+    CLOTHES,
+    LIGHT_ARMORS,
+    HEAVY_ARMORS,
+    ROBES,
+    ACCESSORIES,
+    ABILITY
+}
