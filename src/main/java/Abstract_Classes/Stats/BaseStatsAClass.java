@@ -1,6 +1,6 @@
-package Abstract_Classes;
+package Abstract_Classes.Stats;
 
-public class BaseStatsAClass {
+public abstract class BaseStatsAClass {
     protected int HP;
     protected int MP;
     protected int ATK;

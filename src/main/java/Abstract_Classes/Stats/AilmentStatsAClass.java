@@ -1,6 +1,6 @@
-package Abstract_Classes;
+package Abstract_Classes.Stats;
 
-public class AilmentStatsAClass {
+public abstract class AilmentStatsAClass {
     protected int poison;
     protected int blind;
     protected int sleep;

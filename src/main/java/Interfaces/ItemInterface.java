@@ -1,5 +1,6 @@
 package Interfaces;
 
 public interface ItemInterface {
-    void wearOn( SlotInterface slot );
+    void wearOn( Unit unit );
+    void unWear();
 }
