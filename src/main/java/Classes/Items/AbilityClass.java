@@ -1,9 +1,9 @@
 package Classes.Items;
 
 import Abstract_Classes.ItemAClass;
-import Abstract_Classes.Stats.AilmentStatsAClass;
-import Abstract_Classes.Stats.BaseStatsAClass;
-import Abstract_Classes.Stats.ElementStatsAClass;
+import Classes.Stats.AilmentStatsClass;
+import Classes.Stats.BaseStatsClass;
+import Classes.Stats.ElementStatsClass;
 import Enumerations.AbilityTypeEnumeration;
 import Enumerations.ItemEnumeration;
 import Interfaces.Unit;
@@ -16,10 +16,10 @@ public class AbilityClass extends ItemAClass {
     private ArrayList<Unit> targetLimit;
 
     public AbilityClass(String name,
-                        BaseStatsAClass stats,
+                        BaseStatsClass stats,
                         ItemEnumeration type,
-                        ElementStatsAClass elementResistanceMatrix,
-                        AilmentStatsAClass ailmentResistanceMatrix,
+                        ElementStatsClass elementResistanceMatrix,
+                        AilmentStatsClass ailmentResistanceMatrix,
                         String effect,
                         AbilityTypeEnumeration type1,
                         ArrayList<Unit> targetLimit) {

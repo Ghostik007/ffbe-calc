@@ -1,8 +1,8 @@
 package Classes.Items;
 
-import Abstract_Classes.Stats.AilmentStatsAClass;
-import Abstract_Classes.Stats.BaseStatsAClass;
-import Abstract_Classes.Stats.ElementStatsAClass;
+import Classes.Stats.AilmentStatsClass;
+import Classes.Stats.BaseStatsClass;
+import Classes.Stats.ElementStatsClass;
 import Abstract_Classes.ItemAClass;
 import Enumerations.ElementEnumeration;
 import Enumerations.ItemEnumeration;
@@ -14,10 +14,10 @@ public class WeaponClass extends ItemAClass {
     private ArrayList<AbilityClass> ability;
 
     public WeaponClass(String name,
-                       BaseStatsAClass stats,
+                       BaseStatsClass stats,
                        ItemEnumeration type,
-                       ElementStatsAClass elementResistanceMatrix,
-                       AilmentStatsAClass ailmentResistanceMatrix,
+                       ElementStatsClass elementResistanceMatrix,
+                       AilmentStatsClass ailmentResistanceMatrix,
                        ElementEnumeration elementType,
                        ArrayList<AbilityClass> ability) {
         super(name, stats, type, elementResistanceMatrix, ailmentResistanceMatrix);

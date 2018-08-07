@@ -1,25 +1,25 @@
 package Abstract_Classes;
 
-import Abstract_Classes.Stats.AilmentStatsAClass;
-import Abstract_Classes.Stats.BaseStatsAClass;
-import Abstract_Classes.Stats.ElementStatsAClass;
+import Classes.Stats.AilmentStatsClass;
+import Classes.Stats.BaseStatsClass;
+import Classes.Stats.ElementStatsClass;
 import Enumerations.ItemEnumeration;
 import Interfaces.ItemInterface;
 import Interfaces.Unit;
 
 public abstract class ItemAClass implements ItemInterface {
     protected String name;
-    protected BaseStatsAClass stats;
+    protected BaseStatsClass stats;
     protected ItemEnumeration type;
-    protected ElementStatsAClass elementResistanceMatrix;
-    protected AilmentStatsAClass ailmentResistanceMatrix;
+    protected ElementStatsClass elementResistanceMatrix;
+    protected AilmentStatsClass ailmentResistanceMatrix;
     protected Unit wearOnUnit = null;
 
     public ItemAClass(String name,
-                      BaseStatsAClass stats,
+                      BaseStatsClass stats,
                       ItemEnumeration type,
-                      ElementStatsAClass elementResistanceMatrix,
-                      AilmentStatsAClass ailmentResistanceMatrix) {
+                      ElementStatsClass elementResistanceMatrix,
+                      AilmentStatsClass ailmentResistanceMatrix) {
         this.name = name;
         this.stats = stats;
         this.type = type;
