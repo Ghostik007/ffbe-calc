@@ -1,4 +1,4 @@
-package Classes.Stats.Limits;
+package Classes.Limits;
 
 public class DefaultModificatorLimit {
     protected int DefaultModificatorStart;

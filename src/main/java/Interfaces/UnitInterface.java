@@ -1,6 +1,6 @@
 package Interfaces;
 
-public interface Unit {
+public interface UnitInterface {
     void wear();
     void unwear();
     void attack();

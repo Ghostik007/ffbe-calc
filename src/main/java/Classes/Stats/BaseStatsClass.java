@@ -1,140 +1,30 @@
 package Classes.Stats;
 
-import Classes.Stats.Limits.DefaultModificatorLimit;
+import Abstract_Classes.BaseStatsAClass;
+import Classes.Limits.DefaultModificatorLimit;
 
-public class BaseStatsClass {
+public class BaseStatsClass extends BaseStatsAClass {
     protected DefaultModificatorLimit statsLimit_i;
-
-    protected int HP;
-    protected int MP;
-    protected int ATK;
-    protected int MAG;
-    protected int DEF;
-    protected int SPR;
     protected int evasion;
     protected int provocation;
+    protected int HPTurn;
+    protected int MPTurn;
 
-    protected int HP_i;
-    protected int MP_i;
-    protected int ATK_i;
-    protected int MAG_i;
-    protected int DEF_i;
-    protected int SPR_i;
-
-    public BaseStatsClass(int HP,
-                          int MP,
-                          int ATK,
-                          int MAG,
-                          int DEF,
-                          int SPR,
-                          int evasion,
-                          int provocation,
-                          DefaultModificatorLimit statsLimit_i
-    ) {
-        this.HP = HP;
-        this.MP = MP;
-        this.ATK = ATK;
-        this.MAG = MAG;
-        this.DEF = DEF;
-        this.SPR = SPR;
+    public BaseStatsClass(int HP, int MP, int ATK, int MAG, int DEF, int SPR, DefaultModificatorLimit statsLimit_i, int evasion, int provocation, int HPTurn, int MPTurn) {
+        super(HP, MP, ATK, MAG, DEF, SPR);
+        this.statsLimit_i = statsLimit_i;
         this.evasion = evasion;
         this.provocation = provocation;
+        this.HPTurn = HPTurn;
+        this.MPTurn = MPTurn;
     }
 
-    public int getHP() {
-        return HP;
+    public DefaultModificatorLimit getStatsLimit_i() {
+        return statsLimit_i;
     }
 
-    public void setHP(int HP) {
-        this.HP = HP;
-    }
-
-    public int getMP() {
-        return MP;
-    }
-
-    public void setMP(int MP) {
-        this.MP = MP;
-    }
-
-    public int getATK() {
-        return ATK;
-    }
-
-    public void setATK(int ATK) {
-        this.ATK = ATK;
-    }
-
-    public int getMAG() {
-        return MAG;
-    }
-
-    public void setMAG(int MAG) {
-        this.MAG = MAG;
-    }
-
-    public int getDEF() {
-        return DEF;
-    }
-
-    public void setDEF(int DEF) {
-        this.DEF = DEF;
-    }
-
-    public int getSPR() {
-        return SPR;
-    }
-
-    public void setSPR(int SPR) {
-        this.SPR = SPR;
-    }
-
-    public int getHP_i() {
-        return HP_i;
-    }
-
-    public void setHP_i(int HP_i) {
-        this.HP_i = HP_i;
-    }
-
-    public int getMP_i() {
-        return MP_i;
-    }
-
-    public void setMP_i(int MP_i) {
-        this.MP_i = MP_i;
-    }
-
-    public int getATK_i() {
-        return ATK_i;
-    }
-
-    public void setATK_i(int ATK_i) {
-        this.ATK_i = ATK_i;
-    }
-
-    public int getMAG_i() {
-        return MAG_i;
-    }
-
-    public void setMAG_i(int MAG_i) {
-        this.MAG_i = MAG_i;
-    }
-
-    public int getDEF_i() {
-        return DEF_i;
-    }
-
-    public void setDEF_i(int DEF_i) {
-        this.DEF_i = DEF_i;
-    }
-
-    public int getSPR_i() {
-        return SPR_i;
-    }
-
-    public void setSPR_i(int SPR_i) {
-        this.SPR_i = SPR_i;
+    public void setStatsLimit_i(DefaultModificatorLimit statsLimit_i) {
+        this.statsLimit_i = statsLimit_i;
     }
 
     public int getEvasion() {
@@ -151,5 +41,21 @@ public class BaseStatsClass {
 
     public void setProvocation(int provocation) {
         this.provocation = provocation;
+    }
+
+    public int getHPTurn() {
+        return HPTurn;
+    }
+
+    public void setHPTurn(int HPTurn) {
+        this.HPTurn = HPTurn;
+    }
+
+    public int getMPTurn() {
+        return MPTurn;
+    }
+
+    public void setMPTurn(int MPTurn) {
+        this.MPTurn = MPTurn;
     }
 }

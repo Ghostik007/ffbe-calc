@@ -6,14 +6,14 @@ import Classes.Stats.BaseStatsClass;
 import Classes.Stats.ElementStatsClass;
 import Enumerations.AbilityTypeEnumeration;
 import Enumerations.ItemEnumeration;
-import Interfaces.Unit;
+import Interfaces.UnitInterface;
 
 import java.util.ArrayList;
 
 public class AbilityClass extends ItemAClass {
     private String effect;
     private AbilityTypeEnumeration type;
-    private ArrayList<Unit> targetLimit;
+    private ArrayList<UnitInterface> targetLimit;
 
     public AbilityClass(String name,
                         BaseStatsClass stats,
@@ -22,7 +22,7 @@ public class AbilityClass extends ItemAClass {
                         AilmentStatsClass ailmentResistanceMatrix,
                         String effect,
                         AbilityTypeEnumeration type1,
-                        ArrayList<Unit> targetLimit) {
+                        ArrayList<UnitInterface> targetLimit) {
         super(name, stats, type, elementResistanceMatrix, ailmentResistanceMatrix);
         this.effect = effect;
         this.type = type1;

@@ -1,6 +1,6 @@
 package Interfaces;
 
 public interface ItemInterface {
-    void wearOn( Unit unit );
+    void wearOn( UnitInterface unitInterface);
     void unWear();
 }

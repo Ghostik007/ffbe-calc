@@ -5,7 +5,7 @@ import Classes.Stats.BaseStatsClass;
 import Classes.Stats.ElementStatsClass;
 import Enumerations.ItemEnumeration;
 import Interfaces.ItemInterface;
-import Interfaces.Unit;
+import Interfaces.UnitInterface;
 
 public abstract class ItemAClass implements ItemInterface {
     protected String name;
@@ -13,7 +13,7 @@ public abstract class ItemAClass implements ItemInterface {
     protected ItemEnumeration type;
     protected ElementStatsClass elementResistanceMatrix;
     protected AilmentStatsClass ailmentResistanceMatrix;
-    protected Unit wearOnUnit = null;
+    protected UnitInterface wearOnUnitInterface = null;
 
     public ItemAClass(String name,
                       BaseStatsClass stats,
@@ -27,12 +27,12 @@ public abstract class ItemAClass implements ItemInterface {
         this.ailmentResistanceMatrix = ailmentResistanceMatrix;
     }
 
-    public void wearOn(Unit unit) {
-        wearOnUnit = unit;
+    public void wearOn(UnitInterface unitInterface) {
+        wearOnUnitInterface = unitInterface;
     }
 
     public void unWear() {
-        wearOnUnit = null;
+        wearOnUnitInterface = null;
     }
     //AilmentEnumeration elementType;
 }
